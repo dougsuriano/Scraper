@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIWebViewDelegate> 
+
+@property (nonatomic, retain)   IBOutlet    UIWebView       *theWebView;
+@property (nonatomic, retain)   IBOutlet    UITextField     *theUrlField;
+
+- (IBAction)scrapeSite:(id)sender;
+- (IBAction)goToUrl:(id)sender;
 
 @end
