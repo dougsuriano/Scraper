@@ -40,7 +40,7 @@
     //Use some funky javescript to get the body text and strip out all html tags
     NSString *scrapeResult = [_theWebView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML.replace(/<[^>]*>/g, \"\")"];
     //Put the html in an alert box
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"HTML"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Body Text"
                                                     message:scrapeResult
                                                    delegate:nil
                                           cancelButtonTitle:@"Kick Ass!"
